@@ -14,6 +14,8 @@
 		7096D0E2265003D10063C297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7096D0E1265003D10063C297 /* Assets.xcassets */; };
 		7096D0E5265003D10063C297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7096D0E3265003D10063C297 /* LaunchScreen.storyboard */; };
 		7096D0E8265003D10063C297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096D0E7265003D10063C297 /* main.m */; };
+		70B88845265005F900CB0504 /* MJViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B88841265005F900CB0504 /* MJViewController1.m */; };
+		70B88846265005F900CB0504 /* MJTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B88843265005F900CB0504 /* MJTestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		7096D0E4265003D10063C297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7096D0E6265003D10063C297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7096D0E7265003D10063C297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70B88840265005F900CB0504 /* MJViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJViewController1.h; sourceTree = "<group>"; };
+		70B88841265005F900CB0504 /* MJViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJViewController1.m; sourceTree = "<group>"; };
+		70B88843265005F900CB0504 /* MJTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTestModel.m; sourceTree = "<group>"; };
+		70B88844265005F900CB0504 /* MJTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTestModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +69,11 @@
 			children = (
 				7096D0D5265003D00063C297 /* AppDelegate.h */,
 				7096D0D6265003D00063C297 /* AppDelegate.m */,
-				7096D0D8265003D00063C297 /* SceneDelegate.h */,
-				7096D0D9265003D00063C297 /* SceneDelegate.m */,
 				7096D0DB265003D00063C297 /* ViewController.h */,
 				7096D0DC265003D00063C297 /* ViewController.m */,
+				70B8883F265005F900CB0504 /* ViewControllers */,
+				70B88842265005F900CB0504 /* Model */,
+				70B888482650063800CB0504 /* Others */,
 				7096D0DE265003D00063C297 /* Main.storyboard */,
 				7096D0E1265003D10063C297 /* Assets.xcassets */,
 				7096D0E3265003D10063C297 /* LaunchScreen.storyboard */,
@@ -75,6 +82,34 @@
 			);
 			path = CuiTest;
 			sourceTree = "<group>";
+		};
+		70B8883F265005F900CB0504 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70B88840265005F900CB0504 /* MJViewController1.h */,
+				70B88841265005F900CB0504 /* MJViewController1.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		70B88842265005F900CB0504 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70B88843265005F900CB0504 /* MJTestModel.m */,
+				70B88844265005F900CB0504 /* MJTestModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70B888482650063800CB0504 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7096D0D8265003D00063C297 /* SceneDelegate.h */,
+				7096D0D9265003D00063C297 /* SceneDelegate.m */,
+			);
+			name = Others;
+			path = CuiTest/Others;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -148,6 +183,8 @@
 				7096D0DD265003D00063C297 /* ViewController.m in Sources */,
 				7096D0D7265003D00063C297 /* AppDelegate.m in Sources */,
 				7096D0E8265003D10063C297 /* main.m in Sources */,
+				70B88845265005F900CB0504 /* MJViewController1.m in Sources */,
+				70B88846265005F900CB0504 /* MJTestModel.m in Sources */,
 				7096D0DA265003D00063C297 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

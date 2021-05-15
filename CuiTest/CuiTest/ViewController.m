@@ -6,6 +6,8 @@
 //
 
 #import "ViewController.h"
+#import "MJViewController1.h"
+
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -21,7 +23,7 @@
 	[super viewDidLoad];
 	
 	self.view.backgroundColor = [UIColor purpleColor];
-	
+	self.title = @"MJTest";
 	[self _initUI];
 }
 
@@ -67,6 +69,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	if (indexPath.row == 0) {
+		MJViewController1 *vc = [[MJViewController1 alloc] init];
+		[self.navigationController pushViewController:vc animated:YES];
+		
 		
 	}else {
 		
