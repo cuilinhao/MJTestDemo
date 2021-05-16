@@ -1,0 +1,43 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'https://cdn.cocoapods.org/'
+
+
+target 'CuiTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CuiTest
+
+  # Comment the next line if you don't want to use dynamic frameworks
+#  use_frameworks!
+  
+  # Uncomment the next line when you want all Pods as static framework
+  #use_modular_headers!
+
+  #pod 'MMKV','~>1.2.6'
+  pod 'YYWebImage', '~> 1.0.5'
+  pod 'MJRefresh','~>3.5.0'
+  #pod 'TZImagePickerController'
+  #pod 'UITextView+CMInputView'
+  
+  pod 'SDWebImage', '~> 5.9.0'
+  pod 'AFNetworking','~>3.2.1'
+  pod 'Masonry','~> 1.1.0'
+  pod 'YYText'
+  #pod 'YYKit'
+pod 'YYModel'
+pod 'YYCache'
+pod 'YYImage'
+pod 'YYKeyboardManager'
+pod 'YYDispatchQueuePool'
+pod 'YYAsyncLayer'
+pod 'YYCategories'
+
+
+
+
+
+
+end

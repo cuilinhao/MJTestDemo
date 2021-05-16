@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701A7B132650C36600F3E4B1 /* PFTemplateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 701A7B122650C36600F3E4B1 /* PFTemplateHelper.m */; };
 		7096D0D7265003D00063C297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096D0D6265003D00063C297 /* AppDelegate.m */; };
 		7096D0DA265003D00063C297 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096D0D9265003D00063C297 /* SceneDelegate.m */; };
 		7096D0DD265003D00063C297 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096D0DC265003D00063C297 /* ViewController.m */; };
@@ -16,9 +17,15 @@
 		7096D0E8265003D10063C297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096D0E7265003D10063C297 /* main.m */; };
 		70B88845265005F900CB0504 /* MJViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B88841265005F900CB0504 /* MJViewController1.m */; };
 		70B88846265005F900CB0504 /* MJTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B88843265005F900CB0504 /* MJTestModel.m */; };
+		7687DC7C806854D18963FA35 /* Pods_CuiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27781EC5E70BA3DEAEF40B85 /* Pods_CuiTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27781EC5E70BA3DEAEF40B85 /* Pods_CuiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		701A7AFE2650C16A00F3E4B1 /* TestPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPrefixHeader.pch; sourceTree = "<group>"; };
+		701A7B0D2650C2D800F3E4B1 /* BaseConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseConstants.h; sourceTree = "<group>"; };
+		701A7B112650C36600F3E4B1 /* PFTemplateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFTemplateHelper.h; sourceTree = "<group>"; };
+		701A7B122650C36600F3E4B1 /* PFTemplateHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFTemplateHelper.m; sourceTree = "<group>"; };
 		7096D0D2265003D00063C297 /* CuiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7096D0D5265003D00063C297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7096D0D6265003D00063C297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +42,8 @@
 		70B88841265005F900CB0504 /* MJViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJViewController1.m; sourceTree = "<group>"; };
 		70B88843265005F900CB0504 /* MJTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTestModel.m; sourceTree = "<group>"; };
 		70B88844265005F900CB0504 /* MJTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTestModel.h; sourceTree = "<group>"; };
+		ABAF076A71CD825BF34C16A9 /* Pods-CuiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuiTest.release.xcconfig"; path = "Target Support Files/Pods-CuiTest/Pods-CuiTest.release.xcconfig"; sourceTree = "<group>"; };
+		C51F89CF6359A8C3CB4A0CEB /* Pods-CuiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuiTest.debug.xcconfig"; path = "Target Support Files/Pods-CuiTest/Pods-CuiTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +51,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7687DC7C806854D18963FA35 /* Pods_CuiTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701A7AF02650BEA400F3E4B1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tools;
+			path = CuiTest/Tools;
+			sourceTree = SOURCE_ROOT;
+		};
+		701A7B042650C27700F3E4B1 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				701A7B102650C35800F3E4B1 /* Tools */,
+				701A7B052650C27700F3E4B1 /* Common */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		701A7B052650C27700F3E4B1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				701A7B0D2650C2D800F3E4B1 /* BaseConstants.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		701A7B102650C35800F3E4B1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				701A7B112650C36600F3E4B1 /* PFTemplateHelper.h */,
+				701A7B122650C36600F3E4B1 /* PFTemplateHelper.m */,
+			);
+			name = Tools;
+			path = CuiTest/Tools;
+			sourceTree = SOURCE_ROOT;
+		};
 		7096D0C9265003D00063C297 = {
 			isa = PBXGroup;
 			children = (
 				7096D0D4265003D00063C297 /* CuiTest */,
 				7096D0D3265003D00063C297 /* Products */,
+				CD73D754F18174742D44D65E /* Pods */,
+				82FF6FF95885B02773542013 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +118,7 @@
 				7096D0D6265003D00063C297 /* AppDelegate.m */,
 				7096D0DB265003D00063C297 /* ViewController.h */,
 				7096D0DC265003D00063C297 /* ViewController.m */,
+				701A7B042650C27700F3E4B1 /* Global */,
 				70B8883F265005F900CB0504 /* ViewControllers */,
 				70B88842265005F900CB0504 /* Model */,
 				70B888482650063800CB0504 /* Others */,
@@ -79,6 +127,7 @@
 				7096D0E3265003D10063C297 /* LaunchScreen.storyboard */,
 				7096D0E6265003D10063C297 /* Info.plist */,
 				7096D0E7265003D10063C297 /* main.m */,
+				701A7AFE2650C16A00F3E4B1 /* TestPrefixHeader.pch */,
 			);
 			path = CuiTest;
 			sourceTree = "<group>";
@@ -97,6 +146,7 @@
 			children = (
 				70B88843265005F900CB0504 /* MJTestModel.m */,
 				70B88844265005F900CB0504 /* MJTestModel.h */,
+				701A7AF02650BEA400F3E4B1 /* Tools */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +161,24 @@
 			path = CuiTest/Others;
 			sourceTree = SOURCE_ROOT;
 		};
+		82FF6FF95885B02773542013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27781EC5E70BA3DEAEF40B85 /* Pods_CuiTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD73D754F18174742D44D65E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C51F89CF6359A8C3CB4A0CEB /* Pods-CuiTest.debug.xcconfig */,
+				ABAF076A71CD825BF34C16A9 /* Pods-CuiTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7096D0EB265003D10063C297 /* Build configuration list for PBXNativeTarget "CuiTest" */;
 			buildPhases = (
+				3DF4E53108F6B7842762A0D3 /* [CP] Check Pods Manifest.lock */,
 				7096D0CE265003D00063C297 /* Sources */,
 				7096D0CF265003D00063C297 /* Frameworks */,
 				7096D0D0265003D00063C297 /* Resources */,
+				9880A4F385220816DF59F1EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +245,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DF4E53108F6B7842762A0D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9880A4F385220816DF59F1EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CuiTest/Pods-CuiTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CuiTest/Pods-CuiTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CuiTest/Pods-CuiTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7096D0CE265003D00063C297 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -186,6 +298,7 @@
 				70B88845265005F900CB0504 /* MJViewController1.m in Sources */,
 				70B88846265005F900CB0504 /* MJTestModel.m in Sources */,
 				7096D0DA265003D00063C297 /* SceneDelegate.m in Sources */,
+				701A7B132650C36600F3E4B1 /* PFTemplateHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,11 +438,14 @@
 		};
 		7096D0EC265003D10063C297 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51F89CF6359A8C3CB4A0CEB /* Pods-CuiTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YR55ASR2CN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/cuilinhao/Desktop/MJTEST/CuiTest/CuiTest/TestPrefixHeader.pch;
 				INFOPLIST_FILE = CuiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,11 +459,14 @@
 		};
 		7096D0ED265003D10063C297 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABAF076A71CD825BF34C16A9 /* Pods-CuiTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YR55ASR2CN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/cuilinhao/Desktop/MJTEST/CuiTest/CuiTest/TestPrefixHeader.pch;
 				INFOPLIST_FILE = CuiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
